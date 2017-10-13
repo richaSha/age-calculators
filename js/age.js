@@ -99,7 +99,7 @@ export class Calculator {
   }
 
   leapYear(){
-    let leapYear;
+    let leapYear = false;
     if((this.currentYear%4==0) || ((this.currentYear%100==0) && (this.currentYear%400==0))){
       leapYear =true;
     }
