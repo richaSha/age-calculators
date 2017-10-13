@@ -1,5 +1,6 @@
 import {Calculator } from './../js/age.js';
 $(document).ready(function() {
+   $('.container-fluid').css('height', $(window).height() - $('.jumbotron').height());
   $('.btn').click(function(e){
     e.preventDefault();
     let age = $('.age').val();
@@ -27,5 +28,11 @@ $(document).ready(function() {
     $('#venusYear').text(`Venus Year: ${venusYear} Year`);
     $('#marsYear').text(`Mars Year: ${marsYear} Year`);
     $('#jupitorYear').text(`Jupitor Year: ${jupitorYear} Year`);
+
+    $('#mercuryYearLeft').text(`Left Year in Mercury: ${mercuryYearLeftForLive} Year`);
+    $('#venusYearLeft').text(`Left Year in Venus: ${venusYearLeftForLive} Year`);
+    $('#marsYearLeft').text(`Left Year in Mars: ${marsYearLeftForLive} Year`);
+    $('#jupitorYearLeft').text(`Left Year in Jupitor: ${jupitorYearLeftForLive} Year`);
+    $('#earthYearLeft').text(`Left Year in Earth: ${earthYearLeftForLive} Year`);
   });
 });
