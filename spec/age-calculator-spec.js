@@ -49,3 +49,30 @@ import {Calculator } from './../js/age.js';
       expect(calculator.dayToSecond(1)).toEqual(86400);
     });
   });
+
+  describe('mercuryYear', function() {
+    it('should return mercury year', function(){
+      let calculator = new Calculator('1990','05','15');
+      expect(calculator.mercuryYear(17)).toEqual(70.83333333333333);
+    });
+  });
+
+  describe('venusYear', function() {
+    it('should return venus year', function(){
+      let calculator = new Calculator('1990','05','15');
+      expect(calculator.venusYear(17)).toEqual(27.419354838709676);
+    });
+  });
+
+  describe('marsYear', function() {
+    it('should return mars year', function(){
+      let calculator = new Calculator('1990','05','15');
+      expect(calculator.marsYear(17)).toEqual(9.042553191489361);
+    });
+  });
+  describe('jupiterYear', function() {
+    it('should return jupitor year', function(){
+      let calculator = new Calculator('1990','05','15');
+      expect(calculator.jupiterYear(17)).toEqual(1.433389544688027);
+    });
+  });
